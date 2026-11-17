@@ -34,10 +34,10 @@ defmodule Carafe.MixProject do
   defp deps do
     [
       {:bcrypt_elixir, "~> 3.0"},
-      {:phoenix, "~> 1.6.15"},
+      {:phoenix, "~> 1.6.17"},
       {:phoenix_ecto, "~> 4.4"},
-      {:ecto_sql, "~> 3.10"},
-      {:postgrex, ">= 0.0.0"},
+      {:ecto_sql, "~> 3.14"},
+      {:postgrex, "~> 0.22.2"},
       {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 0.17.5"},
@@ -49,9 +49,9 @@ defmodule Carafe.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"},
+      {:plug_cowboy, "~> 2.8"},
       {:tailwind, "~> 0.1.8", runtime: Mix.env() == :dev},
-      {:paginator, "~> 0.6.0"},
+      {:paginator, "~> 1.0"},
       {:sobelow, "~> 0.13", only: [:dev, :test], runtime: false},
       {:mix_audit, "~> 2.1"}
     ]
